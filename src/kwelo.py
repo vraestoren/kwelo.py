@@ -25,7 +25,7 @@ class Kwelo:
 		return self.session.get(
 			f"{self.api}/network/ip-address/my?format=json").json()
 
-	def get_ip_address_location(self, ip_address: str) -> dict:
+	def get_ip_location(self, ip_address: str) -> dict:
 		return self.session.get(
 			f"{self.api}/network/ip-address/location/{ip_address}?format=json").json()
 
